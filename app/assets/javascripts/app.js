@@ -3,33 +3,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
     el: '#app',
     data: {
       tasks: [
-      'WASH THE DISHES!!!',
-      'FOLD YOUR LAUNDRY!!!',
-      "CLEAN THE KITCHEN!!"
+       
+       priority1: "WASH THE DISHES!!!",
+       priority2: "FOLD YOUR LAUNDRY!!!",
+       priority3: "CLEAN THE KITCHEN!!"
       ],
-      newTask: ""
-
-
-      
-    },
+     
+      newTaskPriority1: ""
+      newTaskPriority2: ""
+      newTaskPriority3: ""
+    
+   },
     mounted: function() {
 
     },
     methods: {
       addTask: function() {
-        if (this.newTask() ) {
-        this.tasks.push(this.newTask);
-        this.newTask = "";
-    }
+        if (this.newTaskPriority1 && this.newTaskPriority2 && this.newTaskPriority3) {
+          var newTask = {
 
-    }
-
-   },
-      completeTask: function(inputTask) {
-        var index = this.tasks.indexOf(inputTask);
-        this.tasks.splice(index,1);
-      
-
+                  priority1
+          }
+        }
       },
     computed: {
 

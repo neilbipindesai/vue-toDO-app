@@ -1,9 +1,7 @@
-
-
 <div id="app">
 <h1>Tasks:</h1>
 <ul>
- <li v-for="task in tasks">{{ task }}</li>
+ <li v-for="task in tasks" v-on:click="completeTask(task)">{{ task }}</li>
  </ul>
 
 <h2>Add a Task</h2>
